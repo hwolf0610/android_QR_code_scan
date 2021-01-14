@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/logo_scanazon"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="50dp"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="40dp"
+                            android:text="Scanazon"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="USERNAME OR EMAIL"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/login_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/edittextborder"
+                            android:paddingLeft="10dp"/>
+
+                        <TextView
+                            android:text="PASSWORD"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/login_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/edittextborder"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"/>
+
+                        <Button
+                            android:text="Sign In"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            android:id="@+id/login_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/btn_main_border"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id = "@+id/login_text2"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="Don't have an account?"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/login_sign"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/login_text2"
+                                    android:text="Register"
+                                    android:textColor="#0e95b0"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="15dp"
+                                    android:onClick="login_sign"/>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>
